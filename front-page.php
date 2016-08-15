@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?></div>
 
 <?php
 function dump($tmp){
@@ -12,9 +12,9 @@ function dump($tmp){
   <div id="main" style="height:100%;">
     <div class="main-inner" style="height:100%;">
       <div id="recent_post_content" class="front-loop" style="height:100%;">
-        <h2 style="padding: 10px 0;"><i class="fa fa-clock-o"></i> 最近の投稿</h2>
-        <div class="wrap" style="margin: 0 10px; height:100%; width:100%">
-          <div class="front-loop-cont" style="padding : 25px 25px; height:100%; width:100%">
+        <h2 style="padding: 1% 0;"><i class="fa fa-clock-o"></i> 最近の投稿</h2>
+        <div class="wrap" style="margin: 0; height:100%; width:100%">
+          <div class="front-loop-cont" style="padding : 0 5%; height:100%; width:100%">
             <?php
             $i = 1;
             wp_reset_query();
@@ -54,7 +54,7 @@ function dump($tmp){
                   <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="300" height="158" />
                   <?php } // get_the_post_thumbnail ?>
                   <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {echo $cat->cat_name;} ?></p>
-                  <h3 class="h3_title" style="margin-bottom:0;"><?php the_title(); ?></h3>
+                  <h3 class="h3_title" style="margin-bottom:0;font-size : 0.5em;"><?php the_title(); ?></h3>
                   <p class="p_date"><span class="date-y"><?php the_time('Y'); ?></span><span class="date-mj"><?php the_time('m/j'); ?></span></p></a>
                 </article>
                 

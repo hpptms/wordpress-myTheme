@@ -84,8 +84,8 @@
 
               <!--前後記事へのリンク-->
               <p class="article-link">
-              <?php next_post_link('%link', '次の記事へ'); ?>
-              <?php previous_post_link('%link', '前の記事へ'); ?>
+              <?php previous_post_link('%link', '投稿日時が古い記事へ'); ?>
+              <?php next_post_link('%link', '投稿日時が新しい記事へ'); ?>
               </p>
             </footer>
 
@@ -105,11 +105,9 @@
             <?php comments_template( '', true ); ?>
 
             <?php
-
             endwhile;
-
             else :
-              ?>
+            ?>
 
             <p>投稿が見つかりません。</p>
 

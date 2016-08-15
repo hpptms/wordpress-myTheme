@@ -58,8 +58,20 @@ html,body { height:100%; }
 /*トップページ記事関連*/
 body.home .front-loop article.post {
     border: ridge;
-    height: 20%;
+    height: 12em;
     width : 20%
+}
+
+body.home .front-loop .popular_post_box {
+  margin-left:0;
+}
+
+body.home .front-loop .popular_post_box img{
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-left : auto;
 }
 
 p.p_category{
@@ -73,7 +85,11 @@ h3.h3_title{
     bottom: 0;
     font-family: 'Tanuki';
     background: #fff;
-    border: 1px solid #000000;
+    border: 0.1em solid #000000;
+}
+
+h3.h3_title:hover{
+    font-size : 0.8em;
 }
 
 /*フッターの幅を調整*/
