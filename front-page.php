@@ -6,6 +6,10 @@ function dump($tmp){
   var_dump($tmp);
   echo "</pre>";
 }
+/*公開済の記事の数を取得*/
+$published_posts = wp_count_posts()->publish;
+
+
 ?>
 
 <div id="content" style="padding: 0; height:100%;">
@@ -33,7 +37,7 @@ function dump($tmp){
                 'relation'=>'OR'
                 ),
                 //記事の数
-              'showposts'=>10,
+              'showposts'=>$published_posts,
               'order'=>'DESC'
               );
             query_posts($args);
@@ -63,6 +67,12 @@ function dump($tmp){
                 endwhile;
                 endif;
                 ?>
+                
+                <div>
+                <?php
+                
+                ?>
+                </div>
 
           </div><!-- /front-root-cont -->
         </div><!-- /wrap -->

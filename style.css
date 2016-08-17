@@ -16,8 +16,13 @@
 
 /*ここからカスタム*/
 /*トップページのCSS*/
-
+html,body { height: 100%; }
 /*header*/
+body.home .wrap {
+  width: 95%;
+}
+
+
 /*add font*/
 @font-face {
   font-family: 'mushin';
@@ -39,7 +44,7 @@ h1#logo {
 }
 
 /*front-page*/
-html,body { height:100%; }
+
 
 /*記事選択*/
 /*記事の画像をマウスオーバーで角をまるくする*/

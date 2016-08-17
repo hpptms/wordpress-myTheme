@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+
+<?php
+  $data_ad_slot = file_get_contents('http://hpptms.dip.jp/wp-content/themes/xeory_extension-child/Parameter/data-ad-slot.txt', true);
+  $data_ad_client = file_get_contents('http://hpptms.dip.jp/wp-content/themes/xeory_extension-child/Parameter/data-ad-client.txt', true);
+?>
+
 <div id="content">
   <div class="wrap">
     <div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
@@ -60,8 +66,8 @@
               <!-- Google AdSence -->
               <ins class="adsbygoogle"
               style="display:block"
-              data-ad-client="ca-pub-5157294493857921"
-              data-ad-slot="7938327298"
+              data-ad-client=<?php echo $data_ad_client ?>
+              data-ad-slot=<?php echo $data_ad_slot ?>
               data-ad-format="auto"></ins>
               <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
@@ -84,18 +90,18 @@
 
               <!--前後記事へのリンク-->
               <p class="article-link">
-              <?php previous_post_link('%link', '投稿日時が古い記事へ'); ?>
-              <?php next_post_link('%link', '投稿日時が新しい記事へ'); ?>
+              <?php previous_post_link('%link', 'old post→'); ?>
+              <?php next_post_link('%link', '←new post'); ?>
               </p>
             </footer>
 
             <?php echo bzb_get_cta($post->ID); ?>
 
-            <?php if( is_active_sidebar('under_post_area') ){ ?>
-              <div class="post-share">
-                <?php dynamic_sidebar('under_post_area');?>
-              </div>
-              <?php } ?>
+            <?php
+            if( is_active_sidebar('under_post_area') ){ 
+                dynamic_sidebar('under_post_area');
+            } 
+            ?>
 
             </article>
 
@@ -122,6 +128,9 @@
     </div><!-- /wrap -->
 
   </div><!-- /content -->
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--<script>$("img").addClass("fancybox image");</script>-->
 
   <?php get_footer(); ?>
 
