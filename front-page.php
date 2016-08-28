@@ -37,7 +37,8 @@ $published_posts = wp_count_posts()->publish;
                 'relation'=>'OR'
                 ),
                 //記事の数
-              'showposts'=>$published_posts,
+              //'showposts'=>$published_posts,
+              'showposts'=>15,
               'order'=>'DESC'
               );
             query_posts($args);

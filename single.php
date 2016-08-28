@@ -57,11 +57,27 @@
               <?php the_post_thumbnail(array(1200, 630, true)); ?>
             </div>
           <?php endif; ?>
+          
+            <div id="single-page-adsence">
+              <p>スポンサーリンク</p>
+              <!--広告を記事内に表示-->
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Google AdSence -->
+              <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client=<?php echo $data_ad_client ?>
+              data-ad-slot=<?php echo $data_ad_slot ?>
+              data-ad-format="auto"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
 
           <section class="post-content" itemprop="text">
             <?php the_content(); ?>
             <div id="single-page-adsence">
-              <!--広告を記事の下部に表示-->
+              <p>スポンサーリンク</p>
+              <!--広告を記事内のに表示-->
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- Google AdSence -->
               <ins class="adsbygoogle"
