@@ -88,14 +88,17 @@ p.p_category{
 h3.h3_title{
     position: absolute;
     bottom: 0;
-    font-family: 'Tanuki';
+    font-family: 'Meiryo UI';
     background: #fff;
     border: 0.1em solid #000000;
+    font-size: 100%;
 }
 
+/*
 h3.h3_title:hover{
     font-size : 0.8em;
 }
+*/
 
 /*フッターの幅を調整*/
 

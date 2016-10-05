@@ -10,6 +10,7 @@ function dump($tmp){
 $published_posts = wp_count_posts()->publish;
 
 
+
 ?>
 
 <div id="content" style="padding: 0; height:100%;">
@@ -59,7 +60,7 @@ $published_posts = wp_count_posts()->publish;
                   <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="300" height="158" />
                   <?php } // get_the_post_thumbnail ?>
                   <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {echo $cat->cat_name;} ?></p>
-                  <h3 class="h3_title" style="margin-bottom:0;font-size : 0.5em;"><?php the_title(); ?></h3>
+                  <h3 class="h3_title" style="margin-bottom:0;"><?php the_title(); ?></h3>
                   <p class="p_date"><span class="date-y"><?php the_time('Y'); ?></span><span class="date-mj"><?php the_time('m/j'); ?></span></p></a>
                 </article>
                 
