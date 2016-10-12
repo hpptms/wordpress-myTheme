@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/*
+  Theme Name:   xeory_extension-child
+  Template:     xeory_extension
+  Theme URI:    http://hpptms.dip.jp
+  Description:  xeory_extension Child Theme
+  Author:       hpptms
+  Author URI:   http://hpptms.dip.jp
+  Version:      1.0.1
+  License:      GNU General Public License v2 or later
+  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/*親テーマのスタイル読込*/
+/*@import url(“../xeory_extension/style.css”);*/
+
+/*ここからカスタム*/
+
+/*トップページのCSS*/
+/*フッターを常に最下部に固定*/
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#content {
+  flex: 1;
+}
+/*フッターの固定　end*/
+
+/*add font*/
+@font-face {
+  font-family: 'mushin';
+  src: url('font/mushin/mushin.otf');
+}
+@font-face {
+  font-family: 'Tanuki';
+  src: url('font/TanukiMagic_1_12/TanukiMagic_1_12/TanukiMagic.ttf');
+}
+
+/*title logo*/
+h1#logo {
+  padding: 10px 10px;
+  font-family: 'Tanuki';
+  text-shadow:
+  0 0 25px #FFFF00,
+  0 0 20px #edf8ff,
+  0 0 0.40px #edf8ff;
+}
+
+p#logo {
+  padding: 10px 10px;
+  font-family: 'Tanuki';
+  text-shadow:
+  0 0 25px #FFFF00,
+  0 0 20px #edf8ff,
+  0 0 0.40px #edf8ff;
+}
+
+/*front-page*/
+
+/*記事選択*/
+
+
+/*トップページ記事関連*/
+h3.h3_title{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Tanuki';
+    background: #fff;
+    border: 0.1em solid #000000;
+}
+
+h3.h3_title:hover{
+    font-size : 0.8em;
+}
+
+/*フッターの幅を調整*/
+
+.footer-01 {
+  background: #031731;
+  padding: 5px 0;
+}
+
+#footer .wrap {
+  padding: 5px 0;
+}
+
+/*トップページのCSSここまで*/
+
+
+/*ブログ記事ページのCSS*/
+
+.post-thumbnail img {
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+  background: #fff;
+  width: auto;
+  border: 1px #bfbfbf solid;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+
+/*記事の下の広告の区切りを分かりやすく*/
+
+#single-page-adsence {
+  padding: 4px;
+  border: 1px #bfbfbf solid;
+  /*box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
+}
+
+
+/*記事中の画像も縁取り*/
+
+.alignnone {
+  padding: 4px;
+  border: 1px #bfbfbf solid;
+  /*box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
+}
+
+
+/*記事部分アイキャッチ画像の記事と画像の幅調整*/
+
+.post-thumbnail-custom {
+  padding-top: 10px;
+}
+
+/*前後記事*/
+.article-link{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+/*ブログ記事ページのCSSここまで*/
+
+/*footer*/
