@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 /*
-Theme Name:   xeory_extension-child
-Template:     xeory_extension
-Theme URI:    http://hpptms.dip.jp
-Description:  xeory_extension Child Theme
-Author:       hpptms
-Author URI:   http://hpptms.dip.jp
-Version:      1.0.0
-License:      GNU General Public License v2 or later
-License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+  Theme Name:   xeory_extension-child
+  Template:     xeory_extension
+  Theme URI:    http://hpptms.dip.jp
+  Description:  xeory_extension Child Theme
+  Author:       hpptms
+  Author URI:   http://hpptms.dip.jp
+  Version:      1.0.0
+  License:      GNU General Public License v2 or later
+  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*親テーマのスタイル読込*/
 /*@import url(“../xeory_extension/style.css”);*/
@@ -60,659 +60,68 @@ h1#logo {
   border-radius: 30%;
 }
 
-/*トップページ記事共通*/
-
+/*トップページ記事関連*/
 body.home .front-loop article.post {
-  border: ridge;
-  height: 12em;
-  ｝
+    border: ridge;
+    height: 12em;
+    width : 20%
+}
 
 body.home .front-loop .popular_post_box {
   margin-left:0;
 }
 
 body.home .front-loop .popular_post_box img{
-  width: auto;
-  height: auto;
-  margin: 0;
-  margin-right: auto;
-  margin-left : auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-left : auto;
 }
 
 p.p_category{
-  position: absolute;
-  top: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 h3.h3_title{
-  position: absolute;
-  bottom: 0;
-  font-family: 'Meiryo UI';
-  background: #fff;
-  border: 0.1em solid #000000;
-  font-size: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Meiryo UI';
+    background: #fff;
+    border: 0.1em solid #000000;
+    font-size: 100%;
 }
 
 @media all and (max-width: 767px) {
   /* phone */
-  .wrap {
-    overflow: hidden;
-  }
-
-  .post-title {
-    font-size: 21px;
-    margin-bottom: 20px;
-  }
-
-  body.home .wrap,
-  .wrap {
-    margin: 0 12px;
-  }
-
   body.home .front-loop article.post {
     width : 100%;
-    margin-bottom: 0;
+    ｝
+    /* phone end */
   }
+  @media all and (max-width: 991px) {
+    /* tablet */
+    body.home .front-loop article.post {
+      width : 32%;
+      ｝
+      /* tablet end */
+    }
 
-  .post-content table{
-    overflow-x: auto;
-    width: 100%;
-    -webkit-overflow-scrolling: touch;
-    display: block;
-    white-space: nowrap;
-  }
+    @media screen and (max-width: 1200px) {
+      /* laptop start */
+      body.home .front-loop article.post {
+        width : 25%;
+        ｝
+        /* end laptop */
+      }
 
-  body.home #front-company dl dt,
-  body.home #front-company dl dd {
-    float: none;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  body.home #front-company dl dt span,
-  body.home #front-company dl dd span {
-    padding: 0;
-  }
-  body.home #front-company dl dt {
-    font-weight: bold;
-    padding: 8px 12px 0;
-  }
-  body.home #front-company dl dd {
-    border-top: none !important;
-    padding: 4px 12px 8px;
-  }
-
-  #main {
-    width: 100%;
-    float: none;
-  }
-
-  #side {
-    width: 100%;
-    float: none;
-  }
-
-  .left-content #main {
-    width: 100%;
-    float: none;
-  }
-  .left-content #side {
-    width: 100%;
-    float: none;
-  }
-
-  .right-content #main {
-    width: 100%;
-    float: none;
-  }
-  .right-content #side {
-    width: 100%;
-    float: none;
-  }
-
-  .one-column #content .wrap {
-    width: 94%;
-    margin: 0 3%;
-  }
-  .one-column #content .wrap #main {
-    width: 100%;
-    float: none;
-  }
-  .one-column #content .wrap #side {
-    width: 100%;
-    float: none;
-  }
-
-  /* header */
-  #header {
-    padding: 0;
-  }
-  #header .wrap {
-    padding: 0;
-    margin: 0 12px;
-  }
-  #header #logo {
-    float: none;
-  }
-  #header #logo img {
-    vertical-align: top;
-  }
-  #header #header-right {
-    height: auto;
-  }
-  #header #header-primary-nav {
-    display: none;
-  }
-
-  #header-nav-btn {
-    display: block;
-    width: auto;
-    margin: 0 -12px;
-    line-height: 92px;
-    float: none;
-  }
-  #header-nav-btn a {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    padding: 8px 0;
-    line-height: 1.2;
-    background: #3B4552;
-    width: 100%;
-  }
-
-  .single-lp #lp-header {
-    padding: 20px;
-  }
-  .single-lp .lp-thumbnail {
-    float: none;
-    margin: 0 0 13px;
-  }
-  .single-lp .lp-thumbnail img {
-    width: 100%;
-    height: auto;
-  }
-  .single-lp #content {
-    padding: 20px;
-  }
-
-  #gnav-sp {
-    display: none;
-    top: 112px;
-  }
-  #gnav-sp ul {
-    margin-bottom: 20px;
-  }
-  #gnav-sp #header-cont-content ul {
-    margin-left: 0;
-  }
-  #gnav-sp #header-cont-content li {
-    margin-left: 0;
-    float: left;
-    width: 100%;
-  }
-
-  /* loop */
-  body.home .front-loop .popular_post_box {
-    width: 100%;
-    float: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  body.home #front-contents .c_text .c_btn a {
-    width: 100%;
-  }
-
-  /* single */
-  .cat-content .post-header,
-  article.page .post-header,
-  article.post .post-header {
-    padding: 20px;
-  }
-
-  .post-author {
-    padding: 20px;
-  }
-  .post-author .post-author-meta {
-    padding-top: 12px;
-  }
-  .post-author .post-author-meta p {
-    margin-right: 0;
-  }
-
-  .post-meta-area .post-meta,
-  .post-meta-area .post-meta-comment {
-    float: none;
-    width: 100%;
-    padding: 0;
-  }
-  .post-meta-area .post-meta {
-    border-bottom: 1px solid #e5e5e5;
-  }
-  .post-meta-area .post-meta .date {
-    padding: 8px 20px;
-  }
-  .post-meta-area .post-meta-comment .author {
-    border: none;
-    padding: 8px 20px;
-    text-align: left;
-  }
-  .post-meta-area .post-meta-comment .comments {
-    padding: 8px 20px;
-  }
-
-  .post-content,
-  .post-footer {
-    padding: 20px;
-  }
-
-  .post-cta .cta-post-title {
-    padding: 12px 20px;
-    font-size: 18px;
-  }
-  .post-cta .post-cta-inner {
-    padding: 0;
-  }
-  .post-cta .post-cta-cont {
-    padding: 12px 20px;
-  }
-  .post-cta .post-cta-cont .post-cta-img {
-    float: none;
-    margin: 0 0 12px;
-    width: 100%;
-  }
-  .post-cta .post-cta-btn a {
-    width: 100%;
-  }
-
-  .comment-form-author,
-  .comment-form-email {
-    float: none;
-    width: 100%;
-  }
-
-  .single-lp #gnav-sp {
-    display: none;
-  }
-  .single-lp .lp-wrap {
-    width: auto;
-    margin: 0 24px;
-  }
-  .single-lp .lp-form input {
-    width: 100% !important;
-  }
-  .single-lp .lp-form .submit {
-    width: 100%;
-  }
-
-  /* phone end */
+/*
+h3.h3_title:hover{
+    font-size : 0.8em;
 }
-
-@media all and (max-width: 991px) {
-  /* tablet */
-  /* tablet */
-  body.home .wrap,
-  .wrap {
-    width: auto;
-    margin: 0 24px;
-  }
-
-  body.home #front-service {
-    background-image: none;
-  }
-
-  /* header */
-  #header {
-    padding: 0;
-  }
-  #header .wrap {
-    width: auto;
-    margin: 0 24px;
-  }
-
-  #header-nav-btn {
-    display: block;
-    width: 116px;
-    line-height: 92px;
-    float: right;
-  }
-  #header-nav-btn a {
-    display: block;
-    text-align: center;
-    display: block;
-    font-size: 32px;
-    background: #3B4552;
-  }
-
-  #header-fnav-area {
-    display: none;
-  }
-
-  /* gnav */
-  #gnav {
-    display: none;
-  }
-
-  .dummy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 10;
-  }
-
-  #gnav-sp {
-    display: none;
-    background: #3B4552;
-    display: block;
-    color: #fff;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    z-index: 100;
-    position: absolute;
-    right: 0;
-    left: 0;
-    width: 100%;
-  }
-  #gnav-sp .wrap {
-    width: 94%;
-    margin: 0 3%;
-    padding: 36px 0;
-  }
-  #gnav-sp .wrap a {
-    color: #fff;
-  }
-  #gnav-sp #header-cont-content h4,
-  #gnav-sp #header-cont-about h4,
-  #gnav-sp #header-cont-sns h4 {
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-  #gnav-sp #header-cont-content li,
-  #gnav-sp #header-cont-about li,
-  #gnav-sp #header-cont-sns li {
-    font-size: 14px;
-  }
-  #gnav-sp #header-cont-content li a,
-  #gnav-sp #header-cont-about li a,
-  #gnav-sp #header-cont-sns li a {
-    padding: 10px 12px;
-  }
-  #gnav-sp #header-cont-content ul {
-    margin-left: -2%;
-  }
-  #gnav-sp #header-cont-content li {
-    margin-left: 2%;
-    float: left;
-    width: 48%;
-  }
-  #gnav-sp #header-cont-content li a {
-    display: block;
-    position: relative;
-  }
-  #gnav-sp #header-cont-content li a:before {
-    font-family: 'FontAwesome';
-    content: '\f105';
-    position: absolute;
-    left: 0;
-    top: 8px;
-  }
-  #gnav-sp #header-cont-content .children {
-    display: none;
-  }
-  #gnav-sp #footer-nav li a {
-    display: block;
-    padding: 8px 12px;
-    position: relative;
-  }
-  #gnav-sp #footer-nav li a:before {
-    font-family: 'FontAwesome';
-    content: '\f105';
-    position: absolute;
-    left: 0;
-    top: 8px;
-  }
-  #gnav-sp #footer-nav .children {
-    display: none;
-  }
-  #gnav-sp #header-cont-sns li a {
-    display: block;
-    padding: 8px 12px 8px 0;
-  }
-
-  /* front page */
-  body.home #main_visual h2 {
-    margin-top: 0;
-    font-size: 24px;
-  }
-
-  body.home #main_visual p {
-    width: 84%;
-    margin-right: 8%;
-    margin-left: 8%;
-  }
-
-  body.home .front-loop {
-    margin-left: 0;
-  }
-
-  body.home .front-loop article.post {
-    width: 33%;
-    margin-bottom: 1%;
-  }
-
-  body.home .front-loop .popular_post_box {
-    width: 33%;
-    margin: 0;
-  }
-  body.home .front-loop .popular_post_box .wrap-a {
-    display: block;
-    border: 1px solid #e5e5e5;
-  }
-  body.home .front-loop .popular_post_box .wrap-a:hover {
-    background: #fafafa;
-    text-decoration: none;
-  }
-  body.home .front-loop .popular_post_box .wrap-a h3,
-  body.home .front-loop .popular_post_box .wrap-a ul {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  body.home .front-loop .popular_post_box img {
-    width: 100%;
-    height: auto;
-  }
-  body.home .front-loop .popular_post_box.rank-4, body.home .front-loop .popular_post_box.rank-5, body.home .front-loop .popular_post_box.recent-4, body.home .front-loop .popular_post_box.recent-5 {
-    display: none;
-  }
-
-  body.home .front-main-cont .tri-border {
-    display: none;
-  }
-
-  body.home #front-contents .c_box.c_box_left .c_box_inner,
-  body.home #front-contents .c_box.c_box_right .c_box_inner {
-    width: 100%;
-    float: none;
-  }
-  body.home #front-contents .c_box.c_box_left .c_title,
-  body.home #front-contents .c_box.c_box_right .c_title {
-    text-align: center;
-  }
-  body.home #front-contents .c_box.c_box_left .c_img_box,
-  body.home #front-contents .c_box.c_box_right .c_img_box {
-    position: relative;
-    height: 300px;
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  body.home #front-contents .c_box.c_box_left .c_text h4,
-  body.home #front-contents .c_box.c_box_right .c_text h4 {
-    text-align: center;
-  }
-  body.home #front-contents .c_box.c_box_left .c_btn,
-  body.home #front-contents .c_box.c_box_right .c_btn {
-    text-align: center;
-  }
-  body.home #front-contents .c_box.c_box_left .c_btn a,
-  body.home #front-contents .c_box.c_box_right .c_btn a {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  body.home #front-service .front-service-inner {
-    margin-left: 0;
-  }
-  body.home #front-service .front-service-inner .c_box {
-    width: 100%;
-    float: none;
-    margin: 0 0 20px;
-  }
-
-  body.home #front-company .c_img_box {
-    height: 300px;
-    position: relative;
-  }
-  body.home #front-company .c_img_box,
-  body.home #front-company .c_box_inner {
-    float: none;
-    width: 100%;
-  }
-
-  .cat-content .post-header,
-  article.page .post-header,
-  article.post .post-header {
-    padding: 56px 44px;
-  }
-
-  article.page .post-content {
-    padding: 40px;
-  }
-
-  .post-header {
-    padding: 56px 44px 0;
-  }
-
-  .post-content {
-    padding: 40px;
-  }
-  .post-content h2 {
-    margin-left: -52px;
-  }
-
-  .post-meta-area {
-    background: #fff;
-    color: #241913;
-  }
-  .post-meta-area .post-meta {
-    width: 40%;
-    float: left;
-    text-align: left;
-  }
-  .post-meta-area .post-meta .date {
-    background: transparent;
-    text-align: left;
-  }
-  .post-meta-area .bzb-sns-btn {
-    height: auto;
-  }
-  .post-meta-area .bzb-sns-btn .sharrre {
-    margin: 0 5px 0 0;
-    float: left !important;
-    width: 20%;
-    overflow: hidden;
-  }
-  .post-meta-area .bzb-sns-btn .sharrre.twitter a, .post-meta-area .bzb-sns-btn .sharrre.facebook a, .post-meta-area .bzb-sns-btn .sharrre.googlePlus a, .post-meta-area .bzb-sns-btn .sharrre.hatena a {
-    background: transparent;
-    display: block;
-    padding: 4px 24px;
-    color: #241913;
-  }
-  .post-meta-area .bzb-sns-btn .sharrre.twitter a .share, .post-meta-area .bzb-sns-btn .sharrre.facebook a .share, .post-meta-area .bzb-sns-btn .sharrre.googlePlus a .share, .post-meta-area .bzb-sns-btn .sharrre.hatena a .share {
-    display: none;
-    text-align: center;
-    float: left;
-  }
-  .post-meta-area .bzb-sns-btn .sharrre.twitter a:hover, .post-meta-area .bzb-sns-btn .sharrre.facebook a:hover, .post-meta-area .bzb-sns-btn .sharrre.googlePlus a:hover, .post-meta-area .bzb-sns-btn .sharrre.hatena a:hover {
-    background: transparent;
-  }
-  .post-meta-area .bzb-sns-btn .s_buttons {
-    font-size: 14px;
-    padding-top: 20px;
-  }
-  .post-meta-area .loop-comment-icon {
-    padding: 4px 12px;
-    background: transparent !important;
-    text-align: center;
-    float: right;
-  }
-
-  #footer-facebook {
-    display: none;
-  }
-
-  #footer-list-area {
-    width: 100%;
-  }
-
-  .single-lp #gnav-sp {
-    display: none;
-  }
-  .single-lp .lp-wrap {
-    width: auto;
-    margin: 0 24px;
-  }
-  .single-lp .lp-form .submit {
-    width: 50%;
-  }
-
-  /* tablet end */
-}
-
-@media screen and (max-width: 1200px) {
-  /* laptop start */
-  body.home .wrap {
-    width: auto;
-    margin: 0 36px;
-  }
-
-  body.home .front-loop article.post {
-    width: 25%;
-    margin-bottom: 1%;
-  }
-
-  .post-header,
-  .post-author {
-    padding: 36px;
-  }
-
-  .post-content,
-  .post-footer {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-
-  .single-lp #gnav-sp {
-    display: none;
-  }
-  .single-lp .lp-wrap {
-    width: auto;
-    margin: 0 36px;
-  }
-  .single-lp #main,
-  .single-lp #side,
-  .single-lp .main-inner {
-    width: 100%;
-    float: none;
-    margin: 0 0 20px;
-  }
-
-  /* end start */
-}
-
-
+*/
 
 /*フッターの幅を調整*/
 
