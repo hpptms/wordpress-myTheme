@@ -16,7 +16,7 @@ $published_posts = wp_count_posts()->publish;
       <div id="recent_post_content" class="front-loop" style="height:100%;">
         <h2 style="padding: 1% 0;"><i class="fa fa-clock-o"></i> 最近の投稿</h2>
         <div class="wrap" style="margin: 0; height:100%; width:100%">
-          <div class="front-loop-cont" style="padding : 0 5%; height:100%; width:100%">
+          <div class="front-loop-cont" style="padding : 0.5% 2%; height:100%; width:100%; margin-right:0.5%; margin-left:0.5%;">
             <?php
             $i = 1;
             wp_reset_query();
@@ -44,10 +44,10 @@ $published_posts = wp_count_posts()->publish;
         if ( have_posts() ) :
           while ( have_posts() ) : the_post();
           $cf = get_post_meta($post->ID);
-          $recent_class = 'popular_post_box recent-'.$i;
+          $recent_class = 'popular_post_box recent-'.$i. ' '. 'clearfix';
           ?>
 
-          <article id="post-<?php echo the_ID(); ?>" <?php post_class($recent_class); ?>>
+          <article id="post-<?php echo the_ID(); ?>" <?php post_class($recent_class); ?> >
             <a href="<?php the_permalink(); ?>" class="wrap-a"><?php if( get_the_post_thumbnail() ) { ?>
               <div class="post-thumbnail post-thumbnail-r-custom">
                 <?php the_post_thumbnail(array('300','158'));

@@ -35,13 +35,54 @@ h1#logo {
   0 0 20px #edf8ff,
   0 0 0.40px #edf8ff;
 }
+/* article→a→div→img→p→h3→p→span→span */
+body.home .front-loop .popular_post_box .wrap-a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
-body.home .front-loop .popular_post_box {
-  margin-left:0;
+.post-thumbnail-r-custom{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 body.home .front-loop .popular_post_box img{
-  position: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height:100%;
+}
+
+
+.post-thumbnail-r-custom img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height:100%;
+  transition: border-radius 0.3s linear;
+}
+
+.post-thumbnail-r-custom img:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height:100%;
+  border-radius: 30%;
 }
 
 p.p_category{
@@ -61,17 +102,6 @@ h3.h3_title{
 }
 
 /*記事の画像をマウスオーバーで角をまるくする*/
-.post-thumbnail-r-custom {
-  overflow: visible;
-}
-
-.post-thumbnail-r-custom img {
-  transition: border-radius 0.3s linear;
-}
-
-.post-thumbnail-r-custom img:hover {
-  border-radius: 30%;
-}
 
 /*
 h3.h3_title:hover{
@@ -159,21 +189,27 @@ justify-content: space-between;
 }
 
 /*ブログ記事ページのCSSここまで*/
-
 /*フロントページ記事*/
 /*スマートフォン向け設定*/
 body.home .front-loop article.post
 {
+  position: relative;
   border: ridge;
   height: 12em;
   width : 100%;
   margin: 0;
 }
 
+body.home .front-loop article.post:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
 /*タブレット向け設定*/
 @media all and (min-width:768px){
   body.home .front-loop article.post {
-    width : 32%;
+    width : 33.3333333333%;
   ｝
 }
 
