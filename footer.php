@@ -64,7 +64,7 @@
 <a href="#" class="pagetop"><span><i class="fa fa-angle-up"></i></span></a>
 <?php wp_footer(); ?>
 
-<script>
+<!-- <script>
 (function($){
 
 $(function() {
@@ -104,7 +104,7 @@ $(function(){
 
 })(jQuery);
 
-</script>
+</script> -->
 
 
 </body>
