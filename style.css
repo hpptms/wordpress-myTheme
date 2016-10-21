@@ -26,6 +26,13 @@ body.home .wrap {
   src: url('font/TanukiMagic_1_12/TanukiMagic_1_12/TanukiMagic.ttf');
 }
 
+/* フロントページ */
+/*
+body.home .main-inner{
+overflow: auto;
+}
+*/
+
 /*title*/
 h1#logo {
   padding: 10px 10px;
@@ -35,6 +42,21 @@ h1#logo {
   0 0 20px #edf8ff,
   0 0 0.40px #edf8ff;
 }
+
+/*
+body.home .main-inner{
+overflow-y: auto;
+}
+*/
+/*front-loop-content*/
+/*
+body.home .front-loop .front-loop-cont{
+padding : 0.5% 2% 0% 3%;
+height:100%;
+width:100%;
+}
+*/
+
 /* article→a→div→img→p→h3→p→span→span */
 body.home .front-loop .popular_post_box .wrap-a{
   position: absolute;
@@ -58,8 +80,15 @@ body.home .front-loop .popular_post_box img{
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 100%;
-  max-height:100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
 
 
@@ -69,8 +98,15 @@ body.home .front-loop .popular_post_box img{
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 100%;
-  max-height:100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
   transition: border-radius 0.3s linear;
 }
 
@@ -80,8 +116,15 @@ body.home .front-loop .popular_post_box img{
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 100%;
-  max-height:100%;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  object-fit: scale-down;
   border-radius: 30%;
 }
 
@@ -112,12 +155,12 @@ font-size : 0.8em;
 /*フッターの幅を調整*/
 
 .footer-01 {
-background: #031731;
-padding: 5px 0;
+  background: #031731;
+  padding: 5px 0;
 }
 
 #footer .wrap {
-padding: 5px 0;
+  padding: 5px 0;
 }
 
 
@@ -125,67 +168,67 @@ padding: 5px 0;
 
 /*動画をレスポンシブにする*/
 .youtube {
-position: relative;
-width: 100%;
-padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
 }
 .youtube iframe {
-position: absolute;
-top: 0;
-right: 0;
-width: 100% !important;
-height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 
 /*blog logo*/
 p#logo {
-padding: 10px 10px;
-font-family: 'Tanuki';
-text-shadow:
-0 0 25px #FFFF00,
-0 0 20px #edf8ff,
-0 0 0.40px #edf8ff;
+  padding: 10px 10px;
+  font-family: 'Tanuki';
+  text-shadow:
+  0 0 25px #FFFF00,
+  0 0 20px #edf8ff,
+  0 0 0.40px #edf8ff;
 }
 
 .post-thumbnail img {
-display: block;
-margin: 0 auto;
-padding: 4px;
-background: #fff;
-width: auto;
-border: 1px #bfbfbf solid;
-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+  background: #fff;
+  width: auto;
+  border: 1px #bfbfbf solid;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
 }
 
 
 /*記事の下の広告の区切りを分かりやすく*/
 
 #single-page-adsence {
-padding: 4px;
-border: 1px #bfbfbf solid;
-/*box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
+  padding: 4px;
+  border: 1px #bfbfbf solid;
+  /*box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
 }
 
 
 /*記事中の画像も縁取り*/
 .alignnone {
-padding: 4px;
-border: 1px #bfbfbf solid;
-/*box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
+  padding: 4px;
+  border: 1px #bfbfbf solid;
+  /*box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
 }
 
 
 /*記事部分アイキャッチ画像の記事と画像の幅調整*/
 .post-thumbnail-custom {
-padding-top: 10px;
+  padding-top: 10px;
 }
 
 /*前後記事*/
 .article-link{
-display: flex;
-flex-direction: row-reverse;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 /*ブログ記事ページのCSSここまで*/
@@ -201,21 +244,27 @@ body.home .front-loop article.post
 }
 
 body.home .front-loop article.post:after{
-	content: "";
-	clear: both;
-	display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
 
 /*タブレット向け設定*/
 @media all and (min-width:768px){
   body.home .front-loop article.post {
     width : 33.3333333333%;
-  ｝
-}
+    ｝
+  }
 
-/*PC向けの設定*/
-@media all and (min-width: 1200px){
-  body.home .front-loop article.post {
-    width : 25%;
-  ｝
-}
+  /*PC向けの設定*/
+  @media all and (min-width: 1200px){
+    body.home .front-loop .front-loop-cont{
+      padding : 0.5% 2% 0% 3%;
+      height:100%;
+      width:100%;
+    }
+
+    body.home .front-loop article.post {
+      width : 25%;
+      ｝
+    }

@@ -14,9 +14,9 @@ $published_posts = wp_count_posts()->publish;
   <div id="main" style="height:100%;">
     <div class="main-inner" style="height:100%;">
       <div id="recent_post_content" class="front-loop" style="height:100%;">
-        <h2 style="padding: 1% 0;"><i class="fa fa-clock-o"></i> 最近の投稿</h2>
+        <h2 style="padding: 0.5% 0;"><i class="fa fa-clock-o"></i> 最近の投稿</h2>
         <div class="wrap" style="margin: 0; height:100%; width:100%">
-          <div class="front-loop-cont" style="padding : 0.5% 2%; height:100%; width:100%; margin-right:0.5%; margin-left:0.5%;">
+          <div class="front-loop-cont">
             <?php
             $i = 1;
             wp_reset_query();
@@ -76,6 +76,6 @@ $published_posts = wp_count_posts()->publish;
 </div><!-- /content -->
 
 <script src="/wp-content/themes/xeory_extension-child/js/custom/front-page.js"></script>
-<script src="/wp-content/themes/xeory_extension-child/js/plugin/footerFixed.js"></script>
+<!-- <script src="/wp-content/themes/xeory_extension-child/js/plugin/footerFixed.js"></script> -->
 
 <?php get_footer(); ?>
