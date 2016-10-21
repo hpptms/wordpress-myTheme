@@ -224,11 +224,11 @@ body.home .front-loop article.post
   margin: 0;
 }
 
-body.home .front-loop article.post:after{
+/*body.home .front-loop article.post:after{
   content: "";
   clear: both;
   display: block;
-}
+}*/
 
 /*タブレット向け設定*/
 @media all and (min-width:768px){

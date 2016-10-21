@@ -1,13 +1,13 @@
 <?php get_header(); ?></div>
 
 <?php
-function dump($tmp){
-  echo '<pre>';
-  var_dump($tmp);
-  echo '</pre>';
-}
-/*公開済の記事の数を取得*/
-$published_posts = wp_count_posts()->publish;
+// function dump($tmp){
+//   echo '<pre>';
+//   var_dump($tmp);
+//   echo '</pre>';
+// }
+// /*公開済の記事の数を取得*/
+// $published_posts = wp_count_posts()->publish;
 ?>
 
 <div id="content" style="padding: 0; height:100%;">
@@ -44,7 +44,7 @@ $published_posts = wp_count_posts()->publish;
         if ( have_posts() ) :
           while ( have_posts() ) : the_post();
           $cf = get_post_meta($post->ID);
-          $recent_class = 'popular_post_box recent-'.$i. ' '. 'clearfix';
+          $recent_class = 'popular_post_box recent-'.$i;
           ?>
 
           <article id="post-<?php echo the_ID(); ?>" <?php post_class($recent_class); ?> >
