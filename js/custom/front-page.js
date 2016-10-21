@@ -9,6 +9,7 @@ $ = jQuery;
 
 // 画面の幅を取得
 var window_w;
+/*DOMの読み込み完了後*/
 /*
 $(document).ready(function(){
   window_w = $(window).width();

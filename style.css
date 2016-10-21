@@ -11,8 +11,6 @@ Version:      1.0.0
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
-/*親テーマのスタイル読込*/
-/*@import url(“../xeory_extension/style.css”);*/
 
 html,body { height: 100%; }
 /*header*/
@@ -27,11 +25,6 @@ body.home .wrap {
 }
 
 /* フロントページ */
-/*
-body.home .main-inner{
-overflow: auto;
-}
-*/
 
 /*title*/
 h1#logo {
@@ -42,20 +35,6 @@ h1#logo {
   0 0 20px #edf8ff,
   0 0 0.40px #edf8ff;
 }
-
-/*
-body.home .main-inner{
-overflow-y: auto;
-}
-*/
-/*front-loop-content*/
-/*
-body.home .front-loop .front-loop-cont{
-padding : 0.5% 2% 0% 3%;
-height:100%;
-width:100%;
-}
-*/
 
 /* article→a→div→img→p→h3→p→span→span */
 body.home .front-loop .popular_post_box .wrap-a{
@@ -191,6 +170,8 @@ p#logo {
   0 0 0.40px #edf8ff;
 }
 
+
+
 .post-thumbnail img {
   display: block;
   margin: 0 auto;
@@ -251,6 +232,12 @@ body.home .front-loop article.post:after{
 
 /*タブレット向け設定*/
 @media all and (min-width:768px){
+  body.home .front-loop .front-loop-cont{
+    padding : 0.5% 2% 0% 3%;
+    height:100%;
+    width:100%;
+  }
+
   body.home .front-loop article.post {
     width : 33.3333333333%;
     ｝
