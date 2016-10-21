@@ -6,8 +6,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <?php
-wp_dequeue_style( 'parent-style-css' );
-wp_dequeue_style( 'child-style-css' );
 wp_head();
 ?>
 
