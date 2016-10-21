@@ -51,24 +51,24 @@ var width_check = function(w){
 var article_height;
 var article_num;
 var get_article = function(){
-  article_height = $("article").outerHeight(true);
-  article_num = $("article").length;
+  article_height = $('article').outerHeight(true);
+  article_num = $('article').length;
 }
 
 var pc_set = function(){
   get_article();
-  $(".front-loop-cont").css("height", ((article_num / 4 ) * article_height +50 ) + "px");
+  $('.front-loop-cont').css('height', ((article_num / 4 ) * article_height +50 ) + 'px');
   // $("#content").css("height",$(".front-loop-cont").outerHeight(true));
 };
 // tablet用の設定 991
 var tablet_set = function(){
   get_article();
-  $(".front-loop-cont").css("height", ((article_num / 3 ) * article_height +50 ) + "px");
-  $("#content").css("height",$(".front-loop-cont").outerHeight(true));
+  $('.front-loop-cont').css('height', ((article_num / 3 ) * article_height +50 ) + 'px');
+  $('#content').css('height',$('.front-loop-cont').outerHeight(true));
 };
 // mobile用の設定 767
 var mobile_set = function(){
   get_article();
-  $(".front-loop-cont").css("height", (article_num * article_height +50 ) + "px");
-  $("#content").css("height",$(".front-loop-cont").outerHeight(true));
+  $('.front-loop-cont').css('height', (article_num * article_height +50 ) + 'px');
+  $('#content').css('height',$('.front-loop-cont').outerHeight(true));
 };
