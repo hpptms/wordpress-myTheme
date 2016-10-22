@@ -18,12 +18,10 @@ $(document).ready(function(){
 */
 
 /* ページ読み込み後 **************/
-/*
 $(window).load(function(){
   window_w = $(window).width();
   width_check(window_w);
 });
-*/
 
 /* ページ表示後  ****************/
 var timer = false;
