@@ -75,7 +75,7 @@
 </div><!-- /main -->
 </div><!-- /content -->
 
-<!-- <script src='/wp-content/themes/xeory_extension-child/js/custom/front-page.js'></script> -->
+<script src='/wp-content/themes/xeory_extension-child/js/custom/front-page.js'></script>
 <!-- <script src="/wp-content/themes/xeory_extension-child/js/plugin/footerFixed.js"></script> -->
 
 <?php get_footer(); ?>
