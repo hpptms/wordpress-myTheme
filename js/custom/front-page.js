@@ -9,21 +9,13 @@ $ = jQuery;
 
 // 画面の幅を取得
 var window_w;
-/*DOMの読み込み完了後*/
-/*
-$(document).ready(function(){
-  window_w = $(window).width();
-  width_check(window_w);
-});
-*/
 
-/* ページ読み込み後 **************/
 $(window).load(function(){
   window_w = $(window).width();
   width_check(window_w);
 });
 
-/* ページ表示後  ****************/
+// ページ表示後
 var timer = false;
 $(window).resize(function() {
   if(timer !== false){
@@ -53,17 +45,17 @@ var article_num;
 var get_article = function(){
   article_height = $('article').outerHeight(true);
   article_num = $('article').length;
-}
+}；
 
 var pc_set = function(){
   get_article();
-  $('.front-loop-cont').css('height', ((article_num / 4 ) * article_height +150 ) + 'px');
+  $('.front-loop-cont').css('height', ((article_num / 4 ) * article_height +100 ) + 'px');
   //$("#content").css("height",$(".front-loop-cont").outerHeight(true));
 };
 // tablet用の設定 991
 var tablet_set = function(){
   get_article();
-  $('.front-loop-cont').css('height', ((article_num / 3 ) * article_height +150 ) + 'px');
+  $('.front-loop-cont').css('height', ((article_num / 3 ) * article_height +100 ) + 'px');
   $('#content').css('height',$('.front-loop-cont').outerHeight(true));
 };
 // mobile用の設定 767

@@ -27,26 +27,26 @@
     hp = h * .3;
     $("#main_visual").css("height", h + "px");
     $("#main_visual .wrap").css("padding-top", hp + "px");
-      //main_visualをパーティクルに
-      if(window.location.href === "http://hpptms.dip.jp/"){
-        $("#main_visual").particleground({
-          dotColor: "#5cbdaa",
-          lineColor: "#5cbdaa",
-          parallax: false
-        })
-      }
-      
-    });
+    //main_visualをパーティクルに
+    if(window.location.href === "http://hpptms.dip.jp/"){
+      $("#main_visual").particleground({
+        dotColor: "#5cbdaa",
+        lineColor: "#5cbdaa",
+        parallax: false
+      })
+    }
+
+  });
 
   $(function(){
-  	if(window.innerWidth < 768) {
+    if(window.innerWidth < 768) {
       h = $(window).height();
-    h = h/2; //追加
-    hp = h * .2;
-    $("#main_visual").css("height", h + "px");
-    $("#main_visual .wrap").css("padding-top", hp + "px");
-  }
-});
+      h = h/2; //追加
+      hp = h * .2;
+      $("#main_visual").css("height", h + "px");
+      $("#main_visual .wrap").css("padding-top", hp + "px");
+    }
+  });
 
   // sp-nav
   $(function(){
