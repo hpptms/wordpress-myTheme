@@ -57,18 +57,18 @@ var get_article = function(){
 
 var pc_set = function(){
   get_article();
-  $('.front-loop-cont').css('height', ((article_num / 4 ) * article_height +50 ) + 'px');
-  // $("#content").css("height",$(".front-loop-cont").outerHeight(true));
+  $('.front-loop-cont').css('height', ((article_num / 4 ) * article_height +150 ) + 'px');
+  //$("#content").css("height",$(".front-loop-cont").outerHeight(true));
 };
 // tablet用の設定 991
 var tablet_set = function(){
   get_article();
-  $('.front-loop-cont').css('height', ((article_num / 3 ) * article_height +50 ) + 'px');
+  $('.front-loop-cont').css('height', ((article_num / 3 ) * article_height +150 ) + 'px');
   $('#content').css('height',$('.front-loop-cont').outerHeight(true));
 };
 // mobile用の設定 767
 var mobile_set = function(){
   get_article();
-  $('.front-loop-cont').css('height', (article_num * article_height +50 ) + 'px');
+  $('.front-loop-cont').css('height', (article_num * article_height +150 ) + 'px');
   $('#content').css('height',$('.front-loop-cont').outerHeight(true));
 };
