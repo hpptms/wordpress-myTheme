@@ -10,6 +10,11 @@
 // $published_posts = wp_count_posts()->publish;
 ?>
 
+<?php
+$data_ad_slot = file_get_contents('http://hpptms.dip.jp/wp-content/themes/xeory_extension-child/Parameter/data-ad-slot.txt', true);
+$data_ad_client = file_get_contents('http://hpptms.dip.jp/wp-content/themes/xeory_extension-child/Parameter/data-ad-client.txt', true);
+?>
+
 <div id="content" style="padding: 0; height:100%;">
   <div id="main" style="height:100%;">
     <div class="main-inner" style="height:100%;">
@@ -66,6 +71,20 @@
             endwhile;
           endif;
           ?>
+
+          <p>スポンサーリンク</p>
+          <!--広告を表示-->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Google AdSence -->
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client=<?php echo $data_ad_client ?>
+          data-ad-slot=<?php echo $data_ad_slot ?>
+          data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          
           <?php
           ?>
         </div><!-- /front-root-cont -->
