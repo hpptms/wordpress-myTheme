@@ -22,6 +22,7 @@ $data_ad_client = file_get_contents('http://hpptms.dip.jp/wp-content/themes/xeor
         <h2 style="padding: 0.5% 0;"><i class="fa fa-clock-o"></i> 最近の投稿</h2>
         <div class="wrap" style="margin: 0; height:100%; width:100%">
           <div class="front-loop-cont">
+            <section id="posts">
             <?php
             $i = 1;
             wp_reset_query();
@@ -84,9 +85,10 @@ $data_ad_client = file_get_contents('http://hpptms.dip.jp/wp-content/themes/xeor
           <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          
+
           <?php
           ?>
+        </section><!-- /posts -->
         </div><!-- /front-root-cont -->
       </div><!-- /wrap -->
     </div><!-- /recent_post_content -->
