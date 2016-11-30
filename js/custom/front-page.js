@@ -25,7 +25,6 @@ $(window).resize(function() {
   timer = setTimeout(function() {
     window_w = $(window).width();
     width_check(window_w);
-    console.log('resized');
   }, 200);
 });
 
