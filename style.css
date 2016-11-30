@@ -132,6 +132,10 @@ h3.h3_title{
   font-size: 100%;
 }
 
+p.Advertising{
+  margin: 0;
+}
+
 /*記事の画像をマウスオーバーで角をまるくする*/
 
 /*
